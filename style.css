@@ -63,3 +63,9 @@ body{
     background-color: #ff4d4d;
     transition: width 0.3s ease, background-color 0.3s ease;
 }
+/* ---- RULES LIST DESIGN ---- */
+.rules-list{
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+}
