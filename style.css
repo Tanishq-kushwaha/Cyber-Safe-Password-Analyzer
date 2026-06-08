@@ -40,4 +40,11 @@ body{
  border: none;
  color: #ffffff;
  border-radius: 5px; 
+ font-size: 16px;
 }
+.input-group input:focus{
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+/* ---- STRENGTH METER DESIGN ---- */
