@@ -69,3 +69,8 @@ body{
     text-align: left;
     font-size: 14px;
 }
+.rules-list li{
+    margin-bottom: 8px;
+    color: #ff4d4d;
+    transition: color 0.3s ease;
+}
