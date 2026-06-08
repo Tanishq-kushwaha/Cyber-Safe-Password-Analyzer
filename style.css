@@ -27,4 +27,12 @@ body{
     margin: 20px;
     text-align: let;
 }
+.input-group label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
 
+.input-group input{
+    
+}
