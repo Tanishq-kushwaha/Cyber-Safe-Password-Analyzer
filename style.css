@@ -6,18 +6,39 @@
 
 body{
     color: #ffffff;
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---- BADGE DESIGN ---- */
+.developer-badge {
+    display: inline-block;
+    background-color: #007bff; 
+    color: #ffffff;
+    padding: 5px 18px; 
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase; 
+    border-radius: 50px; 
+    margin-top: 10px; 
+    margin-bottom: 15px; 
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 .container{
-   background-color: #2d2d2d;
+   background-color: rgba(45, 45, 45, 0.85);
+   backdrop-filter: blur(10px);
    padding: 40px;
-   border-radius: 10px;    
-   box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+   border-radius: 15px;    
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
    text-align: center;
+   width: 100%;
+   max-width: 450px;
 }
 
 /* ---- INPUT GROUP DESIGN ---- */
@@ -73,4 +94,24 @@ body{
     margin-bottom: 8px;
     color: #ff4d4d;
     transition: color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px; 
+        margin: 0 15px;
+    }
+    
+    h2 {
+        font-size: 22px; 
+    }
+    
+    .input-group input {
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    .rules-list li {
+        font-size: 13px; 
+    }
 }
