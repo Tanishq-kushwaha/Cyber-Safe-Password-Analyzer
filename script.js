@@ -1,10 +1,8 @@
-let passwordInput = document.querySelector("input");
+const passwordInput = document.querySelector("#password-input");
 
-let strengthBar = document.querySelector("#strength-bar");
-
-
-let ruleLength = document.querySelector("#rule-length");
-let ruleUppercase = document.querySelector("#rule-uppercase");
-let ruleLowercase = document.querySelector("#rule-lowercase");
-let ruleNumber = document.querySelector("#rule-number");
-let ruleSymbol = document.querySelector("#rule-symbol");
+const strengthBar = document.querySelector("#strength-bar");
+const ruleLength = document.querySelector("#rule-length");
+const ruleUppercase = document.querySelector("#rule-uppercase");
+const ruleLowercase = document.querySelector("#rule-lowercase");
+const ruleNumber = document.querySelector("#rule-number");
+const ruleSymbol = document.querySelector("#rule-symbol");
