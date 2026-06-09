@@ -21,10 +21,13 @@ const regexSymbol = /[^A-Za-z0-9]/;
 passwordInput.addEventListener("input", function(event){
     const password = event.target.value;
        console.log(password);
-      
+       
+       let score = 0;
+
     //   Uppercase testing
     if(regexUppercase.test(password)){
      ruleUppercase.style.color = "#00cc00";
+     score++;
     }else{
         ruleUppercase.style.color = "#ff4d4d";
     }
@@ -32,6 +35,7 @@ passwordInput.addEventListener("input", function(event){
     //  Lowercase Testing
     if(regexLowercase.test(password)){
            ruleLowercase.style.color = "#00cc00";
+           score++;
     }else{
         ruleLowercase.style.color = "#ff4d4d";
        }
@@ -39,6 +43,7 @@ passwordInput.addEventListener("input", function(event){
     // Number testing   
     if(regexNumber.test(password)){
         ruleNumber.style.color = "#00cc00";
+        score++;
     }else{
         ruleNumber.style.color = "#ff4d4d";
     }
@@ -46,6 +51,7 @@ passwordInput.addEventListener("input", function(event){
     // Symbol testing
     if(regexSymbol.test(password)){
         ruleSymbol.style.color = "#00cc00";
+        score++;
     }else{
         ruleSymbol.style.color = "#ff4d4d";
     }
@@ -53,8 +59,9 @@ passwordInput.addEventListener("input", function(event){
     //Length testing 
   if(password.length >= 8){
     ruleLength.style.color = "#00cc00";
+    score++;
   }else{
      ruleLength.style.color = "#ff4d4d";
   }
-
+  strengthBar.style.widh
 });
