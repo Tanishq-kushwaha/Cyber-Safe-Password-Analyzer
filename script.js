@@ -6,6 +6,7 @@ const ruleUppercase = document.querySelector("#rule-uppercase");
 const ruleLowercase = document.querySelector("#rule-lowercase");
 const ruleNumber = document.querySelector("#rule-number");
 const ruleSymbol = document.querySelector("#rule-symbol");
+const toggleBtn = document.querySelector("#toggle-btn");
 
 
 // Rejex section
@@ -75,4 +76,15 @@ passwordInput.addEventListener("input", function(event){
     strengthBar.style.backgroundColor = "#00cc00";
   }
   
+});
+
+
+toggleBtn.addEventListener("click", function(){
+   if(passwordInput.type === "password"){
+    passwordInput.type = "text";
+    toggleBtn.innerText = "HIDE";
+   }else {
+    passwordInput.type = "password";
+    toggleBtn.innerText = "SHOW";
+  }
 });

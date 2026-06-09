@@ -47,6 +47,7 @@ body{
     flex-direction: column;
     margin: 20px;
     text-align: left;
+    position: relative;
 }
 .input-group label{
     font-size: 14px;
@@ -114,4 +115,24 @@ body{
     .rules-list li {
         font-size: 13px; 
     }
+}
+
+/* ---- TOGGLE BUTTON DESIGN ---- */
+.toggle-btn {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-weight: 700;
+    cursor: pointer; 
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.toggle-btn:hover {
+    color: #ffffff; 
+}
+.toggle-btn:focus {
+    outline: none; 
 }
