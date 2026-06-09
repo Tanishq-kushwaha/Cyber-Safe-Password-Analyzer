@@ -12,10 +12,14 @@ const ruleSymbol = document.querySelector("#rule-symbol");
 const regexUppercase = /[A-Z]/;
 const regexLowercase = /[a-z]/;
 const regexNumber = /[0-9]/;
-const regexSymbol = /[!@#$%^&*(),.?":<>|{}]/;
+// const regexSymbol = /[!@#$%^&*(),.?":<>|{}]/;
+const regexSymbol = /[^A-Za-z0-9]/;
+
 
 
 // Event
 passwordInput.addEventListener("input", function(event){
-       console.log(event.target.value);
+    const password = event.target.value;
+       console.log(password);
 });
+
