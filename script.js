@@ -63,10 +63,16 @@ passwordInput.addEventListener("input", function(event){
   }else{
      ruleLength.style.color = "#ff4d4d";
   }
+
+//    Strength Bar 
   strengthBar.style.width = (score * 20) + "%";
+
   if(score <= 2){
     strengthBar.style.color = "#ff4d4d";
   }else if(score === 3 || score === 4){
     strengthBar.style.color = "#ffa500"
-  }else 
+  }else{
+    strengthBar.style.color = "#00cc00";
+  }
+  
 });
