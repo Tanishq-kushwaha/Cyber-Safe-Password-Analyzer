@@ -21,5 +21,10 @@ const regexSymbol = /[^A-Za-z0-9]/;
 passwordInput.addEventListener("input", function(event){
     const password = event.target.value;
        console.log(password);
+    //    ruleUppercase.style.color = "#00cc00";
+    
 });
 
+regexUppercase.test("passwordInput", function(){
+    ruleUppercase.style.color = "#00cc00";
+});
