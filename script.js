@@ -28,12 +28,14 @@ passwordInput.addEventListener("input", function(event){
     }else{
         ruleUppercase.style.color = "#ff4d4d";
     }
+
     //  Lowercase Testing
     if(regexLowercase.test(password)){
            ruleLowercase.style.color = "#00cc00";
     }else{
         ruleLowercase.style.color = "#ff4d4d";
        }
+
     // Number testing   
     if(regexNumber.test(password)){
         ruleNumber.style.color = "#00cc00";
@@ -41,5 +43,18 @@ passwordInput.addEventListener("input", function(event){
         ruleNumber.style.color = "#ff4d4d";
     }
 
+    // Symbol testing
+    if(regexSymbol.test(password)){
+        ruleSymbol.style.color = "#00cc00";
+    }else{
+        ruleSymbol.style.color = "#ff4d4d";
+    }
+
+    //Length testing 
+  if(password.length >= 8){
+    ruleLength.style.color = "#00cc00";
+  }else{
+     ruleLength.style.color = "#ff4d4d";
+  }
 
 });
