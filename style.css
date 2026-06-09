@@ -136,3 +136,11 @@ body{
 .toggle-btn:focus {
     outline: none; 
 }
+/* ---- SUB-HEADING DESIGN ---- */
+h4 {
+    color: #aaaaaa; 
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
