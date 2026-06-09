@@ -23,7 +23,7 @@ passwordInput.addEventListener("input", function(event){
        console.log(password);
       
     //   Uppercase testing
-       if(regexUppercase.test(password)){
+    if(regexUppercase.test(password)){
      ruleUppercase.style.color = "#00cc00";
     }else{
         ruleUppercase.style.color = "#ff4d4d";
@@ -31,8 +31,15 @@ passwordInput.addEventListener("input", function(event){
     //  Lowercase Testing
     if(regexLowercase.test(password)){
            ruleLowercase.style.color = "#00cc00";
-       }else{
+    }else{
         ruleLowercase.style.color = "#ff4d4d";
        }
+    // Number testing   
+    if(regexNumber.text(password)){
+        ruleNumber.style.color = "#00cc00";
+    }else{
+        ruleNumber.style.color = "#ff4d4d";
+    }
+
 
 });
