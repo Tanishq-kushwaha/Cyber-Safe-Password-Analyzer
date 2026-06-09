@@ -35,7 +35,7 @@ passwordInput.addEventListener("input", function(event){
         ruleLowercase.style.color = "#ff4d4d";
        }
     // Number testing   
-    if(regexNumber.text(password)){
+    if(regexNumber.test(password)){
         ruleNumber.style.color = "#00cc00";
     }else{
         ruleNumber.style.color = "#ff4d4d";
